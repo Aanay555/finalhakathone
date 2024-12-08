@@ -1,7 +1,8 @@
 
 
 import ProductCard from "@/app/components/ProductCard";
-import CategoryCard from "@/app/components/CategoryCard";
+
+import Image from "next/image";
 
 export default function ProductPage() {
   return ( 
@@ -11,7 +12,7 @@ export default function ProductPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Product Image */}
           <div className="bg-white p-4 shadow rounded">
-            <img
+            <Image
               src="/pink-chair.png"
               alt="Library Stool Chair"
               className="w-full h-auto rounded"

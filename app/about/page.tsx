@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import AboutSection from '../components/aboutSection'
+import Image from "next/image";
 
 const About: NextPage = () => (
   <div>
@@ -18,8 +19,8 @@ const About: NextPage = () => (
       </button>
     </div>
     <div className="bg-gray-200 rounded-lg flex items-center justify-center">
-      <img
-        src="/Image Block.png"
+      <Image
+        src="/imageBlock.png"
         alt="chair"
         className="w-full h-auto max-w-[619px] max-h-[478px]"
       />

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FaCheck, FaBars } from "react-icons/fa";
 import { CiCircleAlert } from "react-icons/ci";
 import { BsCartDash } from "react-icons/bs";
+import Image from "next/image";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,8 +33,8 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img
-              src="/Logo icon.png"
+            <Image
+              src="/Logoicon.png"
               alt="Comforty Logo"
               className="h-8 w-auto"
             />

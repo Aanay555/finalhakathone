@@ -50,13 +50,13 @@ const Home: NextPage = () => (
       <h2 className="text-2xl font-semibold mb-5">Top Categories</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
         {[
-          { img: "/office-chair.png", label: "Wing Chair" },
-          { img: "/table-set.png", label: "Wooden Chair" },
-          { img: "/desk-chair.png", label: "Desk Chair" },
-          { img: "/chair4.png", label: "Desk Chair" },
-        ].map(({ img, label }, index) => (
+          { image: "/office-chair.png", label: "Wing Chair" },
+          { image: "/table-set.png", label: "Wooden Chair" },
+          { image: "/desk-chair.png", label: "Desk Chair" },
+          { image: "/chair4.png", label: "Desk Chair" },
+        ].map(({ image, label }, index) => (
           <div key={index} className="relative">
-            <img src={img} alt={label} className="w-full h-48 object-cover rounded-lg" />
+            <Image src={image} alt={label} className="w-full h-48 object-cover rounded-lg" />
             <div className="absolute bottom-0 left-0 p-3 text-white bg-black bg-opacity-60 rounded-b-lg">
               {label}
             </div>
@@ -77,7 +77,7 @@ const Home: NextPage = () => (
 
         {/* Large Image Section */}
         <div className="md:col-span-2 mb-4 md:mb-0">
-          <img
+          <Image
             src="/chair3.png"
             alt="Large orange chair"
             width={648}
@@ -88,28 +88,28 @@ const Home: NextPage = () => (
 
         {/* Right Grid Section */}
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-4">
-          <img
+          <Image
             src="/brown-chair.png"
             alt="White tufted chair"
             width={312}
             height={312}
             className="rounded shadow-lg"
           />
-          <img
+          <Image
             src="/chair4.png"
             alt="Rustic white chair"
             width={312}
             height={312}
             className="rounded shadow-lg"
           />
-          <img
+          <Image
             src="/white-chair.png"
             alt="Gray upholstered chair"
             width={312}
             height={312}
             className="rounded shadow-lg"
           />
-          <img
+          <Image
             src="/white-chair.png"
             alt="Rustic white chair 2"
             width={312}
