@@ -34,8 +34,10 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Image
-              src="/Logoicon.png"
+              src="/LogoIcon.png"
               alt="Comforty Logo"
+              width={40}
+              height={40}
               className="h-8 w-auto"
             />
             <span className="text-xl font-bold text-gray-700">Comforty</span>

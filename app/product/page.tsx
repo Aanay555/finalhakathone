@@ -10,7 +10,7 @@ export default function ProductPage() {
       <div className="py-8">
         <h2 className="text-3xl font-bold text-center mb-8">All Products</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <ProductCard image="/chair1.png" title="Library Chair" price="20" />
+          <ProductCard image="/chair1.png"  title="Library Chair" price="20"  />
           <ProductCard image="/chair2.png" title="Comfy Chair" price="50" />
           <ProductCard image="/chair3.png" title="Orange Chair" price="30" />
           <ProductCard image="/chair4.png" title="Orange Chair" price="30" />

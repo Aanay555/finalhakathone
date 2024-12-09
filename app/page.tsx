@@ -24,7 +24,7 @@ const Home: NextPage = () => (
   {/* Right Section */}
   <div className="w-full lg:w-1/2 flex justify-center items-center">
     <Image
-      src="/Product Image.png"
+      src="/ProductImage.png"
       alt="Chair"
       width={434}
       height={584}
