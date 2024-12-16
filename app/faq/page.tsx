@@ -1,9 +1,18 @@
 
+import Link from "next/link";
 import { FaPlus } from "react-icons/fa6";
 
 export default function Faqs() {
   return (
     <>
+
+    <div className="flex gap-3 mx-5 mt-5 lg:mx-24 lg:mt-16 lg:mb-10">
+        <Link className="text-gray-500" href={"/"}>
+          Home
+        </Link>
+        <p>/</p>
+        <Link href={"/faq"}>Faq</Link>
+      </div>
       <div className="max-w-screen-xl mx-auto mt-16 text-center px-4 sm:px-6 lg:px-8">
         <h1 className="text-[48px] text-[#333333] font-bold mb-4">
           Questions Looks Here

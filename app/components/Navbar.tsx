@@ -4,27 +4,28 @@ import { FaCheck, FaBars } from "react-icons/fa";
 import { CiCircleAlert } from "react-icons/ci";
 import { BsCartDash } from "react-icons/bs";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div>
-    {/* Top Bar */}
-    <div className="bg-[#272343] text-gray-200">
-      <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center text-sm">
-        <div className="flex items-center space-x-2">
-          <FaCheck />
-          <span>Free shipping on all orders over $50</span>
-        </div>
-        <div className="hidden md:flex items-center space-x-6">
-          <div className="hover:underline cursor-pointer">Eng</div>
-          <div className="hover:underline cursor-pointer">FAQs</div>
-          <div className="flex items-center space-x-1">
-            <CiCircleAlert size={16} />
-            <span className="hover:underline cursor-pointer">Need Help</span>
+      {/* Top Bar */}
+      <div className="bg-[#272343] text-gray-200">
+        <div className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center text-sm">
+          <div className="flex items-center space-x-2">
+            <FaCheck />
+            <span>Free shipping on all orders over $50</span>
           </div>
-        </div>
+          <div className="hidden md:flex items-center space-x-6">
+            <div className="hover:underline cursor-pointer">Eng</div>
+            <div className="hover:underline cursor-pointer">FAQs</div>
+            <div className="flex items-center space-x-1">
+              <CiCircleAlert size={16} />
+              <span className="hover:underline cursor-pointer">Need Help</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -66,15 +67,17 @@ const Navbar = () => {
       <div className="hidden md:flex justify-between items-center bg-white">
         <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between w-full">
           <div className="flex space-x-6 font-thin text-gray-700">
-            {["Home", "Shop", "Product", "faq", "about" ,"singlepage" , "cart" ,"contact"].map((link) => (
-              <a
-                key={link}
-                href="#"
-                className="hover:text-teal-600 transition duration-200"
-              >
-                {link}
-              </a>
-            ))}
+            {["Home", "Shop", "Product", "FAQ", "About", "SinglePage", "Cart", "Contact"].map(
+              (link) => (
+                <Link
+                  key={link}
+                  href={`/${link.toLowerCase()}`}
+                  className="hover:text-teal-600 transition duration-200"
+                >
+                  {link}
+                </Link>
+              )
+            )}
           </div>
           <div className="text-gray-700">Contact: (808) 555-0111</div>
         </div>
@@ -83,14 +86,14 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden flex flex-col items-center bg-white py-3 space-y-2 text-gray-700">
-          {["Home", "Shop", "Product", "Pages", "About"].map((link) => (
-            <a
+          {["Home", "Shop", "Product", "FAQ", "About", "Cart", "Contact"].map((link) => (
+            <Link
               key={link}
-              href="#"
+              href={`/${link.toLowerCase()}`}
               className="hover:text-teal-600 transition duration-200"
             >
               {link}
-            </a>
+            </Link>
           ))}
         </div>
       )}

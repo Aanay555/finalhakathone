@@ -3,12 +3,20 @@ import { Poppins } from "next/font/google";
 import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { GoClockFill } from "react-icons/go";
 import ContactSection from "../components/contactSection";
+import Link from "next/link";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["500", "600"] });
 
 const Page = () => {
   return (
     <div className="max-w-screen-xl mx-auto mt-24 px-4 sm:px-6">
+       <div className="flex gap-3 mx-5 mt-5 lg:mx-24 lg:mt-16 lg:mb-10">
+        <Link className="text-gray-500" href={"/"}>
+          Home
+        </Link>
+        <p>/</p>
+        <Link href={"/contact"}>Contact</Link>
+      </div>
       <h1 className="font-semibold text-4xl text-center sm:text-3xl">
         Get In Touch With Us
       </h1>
