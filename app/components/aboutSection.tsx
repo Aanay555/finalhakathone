@@ -4,7 +4,7 @@ import { FaCheck } from "react-icons/fa";
 import { IoFileTrayOutline } from "react-icons/io5";
 import { BiSolidLeaf } from "react-icons/bi";
 
-const AboutSection = () => {
+const aboutSection = () => {
   return (
     <div className="max-w-screen-xl  mx-auto mt-20 px-6">
       <h2 className="text-[32px] font-semibold text-center mb-12">
@@ -57,4 +57,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default aboutSection;
