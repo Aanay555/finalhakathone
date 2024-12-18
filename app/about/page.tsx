@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import AboutSection from '@/app/components/AboutSection';
+import AboutSection from '../components/AboutSection';
 import AboutPopularProduct from "@/app/components/AboutPopularProduct";
 import Image from "next/image";
 import Link from "next/link";
